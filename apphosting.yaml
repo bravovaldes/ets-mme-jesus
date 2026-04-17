@@ -1,0 +1,18 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_WHATSAPP_NUMBER
+    value: "14184901849"
+  - variable: NEXT_PUBLIC_PHONE
+    value: "+1 418 490 1849"
+  - variable: NEXT_PUBLIC_EMAIL
+    value: "contact@etsmmejesus.com"
+  - variable: NEXT_PUBLIC_ADDRESS
+    value: "Dschang, Cameroun"
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: "https://ets-mmejesus-web--ets-mmejesus.us-central1.hosted.app"

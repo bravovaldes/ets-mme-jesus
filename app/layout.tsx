@@ -4,7 +4,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import ScrollToTop from "@/components/layout/ScrollToTop";
-import EmergencyBanner from "@/components/layout/EmergencyBanner";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -83,7 +82,6 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloat />
         <ScrollToTop />
-        <EmergencyBanner />
       </body>
     </html>
   );

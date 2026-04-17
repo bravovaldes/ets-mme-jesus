@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
@@ -47,29 +46,14 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button href="/realisations" variant="outline">
-            Nos realisations
+          <Button href="/faire-part" variant="accent">
+            Faire-parts
           </Button>
-          <Button href="/contact" variant="accent">
-            Nous contacter
+          <Button href="/simulateur" variant="outline">
+            Simulateur de budget
           </Button>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
-          <ChevronDown size={28} className="text-cream/50" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }
