@@ -14,15 +14,6 @@ export default function FairePartSlugPage() {
   const [notFound, setNotFound] = useState(false);
   const [accessCode, setAccessCode] = useState("");
 
-  // Remove body bottom padding on faire-part detail (no tab bar)
-  useEffect(() => {
-    document.body.classList.remove("pb-16");
-    document.body.classList.add("pb-0");
-    return () => {
-      document.body.classList.remove("pb-0");
-      document.body.classList.add("pb-16");
-    };
-  }, []);
   const [accessGranted, setAccessGranted] = useState(false);
 
   useEffect(() => {

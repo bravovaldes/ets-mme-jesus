@@ -52,13 +52,19 @@ export default function RealisationsPreview() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-12"
         >
           <Link
             href="/realisations"
             className="text-accent hover:text-accent-dark transition-colors text-sm tracking-wide"
           >
             Voir toutes nos realisations &rarr;
+          </Link>
+          <Link
+            href="/faire-part"
+            className="text-sm tracking-wide px-6 py-2.5 border border-accent text-accent hover:bg-accent hover:text-white transition-all"
+          >
+            Consulter les faire-parts
           </Link>
         </motion.div>
       </div>

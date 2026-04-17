@@ -20,7 +20,7 @@ export default function WhatsAppFloat() {
       transition={{ delay: 2, type: "spring", stiffness: 200, damping: 15 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="fixed bottom-[76px] lg:bottom-6 right-3 lg:right-6 z-40 flex items-center gap-3"
+      className="fixed bottom-5 right-4 lg:bottom-6 lg:right-6 z-40 flex items-center gap-3"
       aria-label="Discuter sur WhatsApp"
     >
       {hovered && (

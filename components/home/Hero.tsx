@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -7,18 +8,14 @@ import Button from "@/components/ui/Button";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        poster="/images/hero-poster.jpg"
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/hero.mp4" type="video/mp4" />
-      </video>
+      {/* Background image */}
+      <Image
+        src="/images/hero-bg.jpg"
+        alt="Salle de reception"
+        fill
+        className="object-cover"
+        priority
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-primary/65" />

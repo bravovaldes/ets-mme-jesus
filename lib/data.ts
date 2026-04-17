@@ -165,7 +165,7 @@ export const galleryItems = [
   },
   {
     id: 2,
-    src: "/images/event-2.jpg",
+    src: "/images/realisation-deco.jpg",
     type: "photo" as const,
     category: "decorations",
     title: "Decoration chapelle ardente",
@@ -177,7 +177,7 @@ export const galleryItems = [
   },
   {
     id: 3,
-    src: "/images/event-3.jpg",
+    src: "/images/realisation-deco2.jpg",
     type: "photo" as const,
     category: "ceremonies",
     title: "Ceremonie religieuse",
