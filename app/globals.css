@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #1F2E1F;
+  --color-primary-light: #2D3E2E;
+  --color-primary-dark: #0F1A0F;
+  --color-accent: #B8935A;
+  --color-accent-light: #D4AE7A;
+  --color-accent-dark: #9A7A45;
+  --color-cream: #F5F1E8;
+  --color-charcoal: #2C2C2C;
+  --color-muted: #8B8680;
+  --color-border: #E5E0D3;
+  --color-whatsapp: #25D366;
+
+  --font-heading: var(--font-cormorant);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Mobile bottom tab bar safe area (iPhone notch) */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}

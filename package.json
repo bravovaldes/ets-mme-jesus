@@ -1,0 +1,38 @@
+{
+  "name": "ets-mme-jesus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@react-pdf/renderer": "^4.5.1",
+    "firebase": "^12.12.0",
+    "framer-motion": "^12.38.0",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^1.8.0",
+    "next": "16.2.4",
+    "qrcode.react": "^4.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.72.1",
+    "react-masonry-css": "^1.0.16",
+    "resend": "^6.12.0",
+    "yet-another-react-lightbox": "^3.31.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
