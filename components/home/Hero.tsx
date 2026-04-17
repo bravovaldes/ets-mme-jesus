@@ -49,6 +49,9 @@ export default function Hero() {
           <Button href="/faire-part" variant="accent">
             Faire-parts
           </Button>
+          <Button href="/realisations" variant="outline">
+            Nos realisations
+          </Button>
           <Button href="/simulateur" variant="outline">
             Simulateur de budget
           </Button>
